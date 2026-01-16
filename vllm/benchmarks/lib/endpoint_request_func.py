@@ -93,7 +93,7 @@ class RequestFuncOutput:
     prompt_len: int = 0
     error: str = ""
     start_time: float = 0.0
-
+    audio_ttft: float = 0.0 # 新增修改1：音频相关的TTFT指标
 
 class RequestFunc(Protocol):
     def __call__(
